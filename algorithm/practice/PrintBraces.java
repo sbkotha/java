@@ -4,21 +4,29 @@ public class PrintBraces {
     private static int counter = 0;
 
     public static void main(String[] args) {
-        int n = 5;
-        printParenthesis("", n, 0, 0);
-        System.out.println("Count = " + counter);
+        printAllCombinations(1);
+        printAllCombinations(2);
+        printAllCombinations(3);
+        printAllCombinations(4);
     }
 
-    private static void printParenthesis(String prefix, int noOfPairs, int openCount, int closedCount) {
+    private static void printAllCombinations(int n) {
+        System.out.println("N = " + n);
+        printBraces("", n, 0, 0);
+        System.out.println("Count = " + counter);
+        System.out.println("-----------");
+    }
+
+    private static void printBraces(String prefix, int noOfPairs, int openCount, int closedCount) {
         if (closedCount == noOfPairs) {
             System.out.println(prefix);
             counter ++;
         } else {
             if (openCount < noOfPairs) {
-                printParenthesis(prefix + "{", noOfPairs, openCount + 1, closedCount);
+                printBraces(prefix + "{", noOfPairs, openCount + 1, closedCount);
             }
             if (closedCount < openCount) {
-                printParenthesis(prefix + "}", noOfPairs, openCount, closedCount + 1);
+                printBraces(prefix + "}", noOfPairs, openCount, closedCount + 1);
             }
         }
     }
