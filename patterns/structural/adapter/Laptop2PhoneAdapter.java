@@ -1,4 +1,4 @@
-package patterns.creational.adapter;
+package patterns.structural.adapter;
 
 public class Laptop2PhoneAdapter implements Phone {
     @Override
