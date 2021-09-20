@@ -11,4 +11,9 @@ public class File implements FileSystemComponent {
     public void showDetails() {
         System.out.println("File: " + name + " - " + size + " bytes");
     }
+
+    @Override
+    public void addComponent(FileSystemComponent fsc) {
+        throw new UnsupportedOperationException("You can not add compoents to a File");
+    }
 }

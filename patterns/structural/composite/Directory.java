@@ -10,6 +10,7 @@ public class Directory implements FileSystemComponent {
         this.name = name;
     }
 
+    @Override
     public void addComponent(FileSystemComponent fsc) {
         this.dirContents.add(fsc);
     }
@@ -17,8 +18,13 @@ public class Directory implements FileSystemComponent {
     @Override
     public void showDetails() {
         System.out.println("Contents of " + this.name + ":");
-        for (FileSystemComponent each : dirContents) {
-            each.showDetails();
+        if (dirContents.isEmpty()) {
+            System.out.println("Empty");
+        } else {
+            for (FileSystemComponent each : dirContents) {
+                each.showDetails();
+            }
         }
+        System.out.println("");
     }
 }
