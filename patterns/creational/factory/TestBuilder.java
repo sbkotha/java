@@ -1,4 +1,4 @@
-package patterns.factory;
+package patterns.creational.factory;
 
 public class TestBuilder {
     public static void main(String[] args) {

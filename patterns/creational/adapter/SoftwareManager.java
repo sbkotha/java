@@ -1,4 +1,4 @@
-package patterns.adapter;
+package patterns.creational.adapter;
 
 public class SoftwareManager {
     Phone p;

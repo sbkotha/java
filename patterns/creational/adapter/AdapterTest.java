@@ -1,4 +1,4 @@
-package patterns.adapter;
+package patterns.creational.adapter;
 
 public class AdapterTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package patterns.factory;
+package patterns.creational.factory;
 
 public class SwiftDezireCar implements Car {
     @Override

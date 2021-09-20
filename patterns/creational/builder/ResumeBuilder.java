@@ -1,4 +1,4 @@
-package patterns.builder;
+package patterns.creational.builder;
 
 public class ResumeBuilder {
     private String name;
