@@ -2,6 +2,7 @@ package patterns.creational.factory;
 
 public class TestFactory {
     public static void main(String[] args) {
+        // Approach 1
         CarFactory cf = CarFactory.getInstance();
         Car car1 = cf.getCar("low");
         car1.printSpec();
