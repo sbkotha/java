@@ -1,6 +1,6 @@
 package patterns.creational.factory;
 
-public class TestBuilder {
+public class TestFactory {
     public static void main(String[] args) {
         CarFactory cf = CarFactory.getInstance();
         Car car1 = cf.getCar("low");
