@@ -6,7 +6,7 @@ public class ShortView extends AbstractView {
     }
 
     @Override
-    public void renderView() {
+    public void renderResource() {
         System.out.println(this.resource.getTitle());
         System.out.println(this.resource.getDescription());
     }

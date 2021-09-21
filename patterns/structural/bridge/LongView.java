@@ -6,7 +6,7 @@ public class LongView extends AbstractView {
     }
 
     @Override
-    public void renderView() {
+    public void renderResource() {
         System.out.println(this.resource.getTitle());
         System.out.println(this.resource.getDescription());
         System.out.println(this.resource.getImageLocation());

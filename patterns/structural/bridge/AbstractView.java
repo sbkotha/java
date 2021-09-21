@@ -5,5 +5,5 @@ public abstract class AbstractView {
     public AbstractView(IResource newResource) {
         this.resource = newResource;
     }
-    public abstract void renderView();
+    public abstract void renderResource();
 }
