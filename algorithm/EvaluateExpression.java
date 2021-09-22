@@ -8,7 +8,7 @@ public class EvaluateExpression {
     public static void main(String[] args) {
         System.out.print("Enter any expression: ");
         Scanner input = new Scanner(System.in);
-        String infixExp = "a*b+c*d";//input.nextLine();
+        String infixExp = "a/((b+c)*d)";//input.nextLine();
         String postFixExp = convertToPostfix(infixExp);
         System.out.println("Given Expression: " + infixExp);
         System.out.println("Post Fix Expression: " + postFixExp);
