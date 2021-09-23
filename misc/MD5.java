@@ -1,4 +1,4 @@
-package test;
+package misc;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
