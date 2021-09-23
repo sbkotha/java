@@ -1,9 +1,7 @@
 package algorithm.practice;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 
 public class SelectBlock {
@@ -50,12 +48,12 @@ public class SelectBlock {
             scores[i] = score;
         }
 
-        Collection<String> requirements = new ArrayList();
+        Collection<String> requirements = new ArrayList<>();
         requirements.add("gym");
         requirements.add("school");
         requirements.add("store");
 
-        int minScore = 1000;
+        int minScore = Integer.MAX_VALUE;
         int minIndex = 0;
         for (int i=0; i < blocks.length; i++) {
             int score = -1;
@@ -88,6 +86,6 @@ public class SelectBlock {
                 canContinue = false;
             }
         }
-        return 1000000;
+        return Integer.MAX_VALUE;
     }
 }
