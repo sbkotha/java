@@ -36,19 +36,13 @@ public class IndexOfZero {
     private static ArrayList<GroupOf1s> prepareGroupsOf1s(int[] input) {
         ArrayList<GroupOf1s> returnList = new ArrayList<>();
 
-        // Handle the case of first 0
-        if (input[0] == 0) {
-            returnList.add(new GroupOf1s(-1, 0));
-        }
-
         // Handle middle zeros
         int count = 0;
         int startIndex = -1;
         for (int i = 0; i < input.length; i++) {
             if (input[i] == 0) {
-                if (count > 0) {
-                    returnList.add(new GroupOf1s(startIndex, count));
-                }
+                returnList.add(new GroupOf1s(startIndex, count));
+                // Reset variables
                 count = 0;
                 startIndex = -1;
             } else {
@@ -62,12 +56,10 @@ public class IndexOfZero {
         // Handle the last group as the loop is terminated
         if (count > 0) {
             returnList.add(new GroupOf1s(startIndex, count));
-        }
-
-        // Handle the case of first 0
-        if (input[input.length - 1] == 0) {
+        } else {
             returnList.add(new GroupOf1s(input.length, 0));
         }
+
         return returnList;
     }
 }
