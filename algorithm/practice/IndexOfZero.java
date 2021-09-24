@@ -36,8 +36,9 @@ public class IndexOfZero {
     private static ArrayList<GroupOf1s> prepareGroupsOf1s(int[] input) {
         ArrayList<GroupOf1s> returnList = new ArrayList<>();
 
-        // Handle middle zeros
+        // Variable to track count of 1s
         int count = 0;
+        // Variable to track start index of 1
         int startIndex = -1;
         for (int i = 0; i < input.length; i++) {
             if (input[i] == 0) {
