@@ -62,12 +62,9 @@ class Message {
                 System.out.println(e.getClass());
             }
         }
-        try {
-            System.out.println("sendEmail(): Sending Email");
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        System.out.println("sendEmail(): Sending Email");
+        // Do Something
         System.out.println("sendEmail(): Sent Email");
     }
 
@@ -81,12 +78,9 @@ class Message {
                 System.out.println(e.getClass());
             }
         }
-        try {
-            System.out.println("sendFax(): Sending Fax");
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        System.out.println("sendFax(): Sending Fax");
+        // Do Something
         System.out.println("sendFax(): Sent Fax");
     }
 
