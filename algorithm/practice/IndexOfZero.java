@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class IndexOfZero {
     public static void main(String[] args) {
-        // This code assumes only one zero occurring continuously
         System.out.println("Index of 0 to replace: " + findIndexOfZero(new int[] {1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1}));
         System.out.println("Index of 0 to replace: " + findIndexOfZero(new int[] {0, 1, 1, 1, 1, 1}));
         System.out.println("Index of 0 to replace: " + findIndexOfZero(new int[] {0, 1, 1, 1, 1, 1, 0}));
         System.out.println("Index of 0 to replace: " + findIndexOfZero(new int[] {1, 1, 1, 1, 1, 0}));
         System.out.println("Index of 0 to replace: " + findIndexOfZero(new int[] {0}));
+        System.out.println("Index of 0 to replace: " + findIndexOfZero(new int[] {0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0}));
     }
 
     private static int findIndexOfZero(int[] input) {
