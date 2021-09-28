@@ -1,9 +1,8 @@
 package algorithm.sort;
 
 public class QuickSort extends Sort {
-
     public static void main(String args[]) {
-        int[] inputArray = new int[50];
+        int[] inputArray = new int[50000];
         populate(inputArray);
         print("Given : ", inputArray);
 
