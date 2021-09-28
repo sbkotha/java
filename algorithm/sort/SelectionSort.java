@@ -7,7 +7,7 @@ public class SelectionSort extends Sort {
         print("Given : ", inputArray);
 
         long bTime = System.currentTimeMillis();
-        selectionSort(inputArray, 0, inputArray.length - 1);
+        selectionSort(inputArray);
         long eTime = System.currentTimeMillis();
 
         print("Sorted : ", inputArray);
@@ -15,10 +15,10 @@ public class SelectionSort extends Sort {
         System.out.println("Selection Sort Time: " + (eTime-bTime));
     }
 
-    private static void selectionSort(int[] inputArray, int bIndex, int eIndex) {
-        for (int i = 0; i <= eIndex; i++) {
+    private static void selectionSort(int[] inputArray) {
+        for (int i = 0; i < inputArray.length; i++) {
             int minIndex = i;
-            for (int j = i + 1; j <= eIndex; j ++) {
+            for (int j = i + 1; j < inputArray.length; j ++) {
                 if (inputArray[j] < inputArray[minIndex]) {
                     minIndex = j;
                 }
