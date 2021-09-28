@@ -14,4 +14,11 @@ public abstract class Sort {
             array[i] = (int) (Math.random() * 1000);
         }
     }
+
+    public static void swapElements(int[] array, int index1, int index2) {
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+    }
+
 }
