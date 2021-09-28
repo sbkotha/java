@@ -18,19 +18,13 @@ public class MergeSort extends Sort {
 
     public static void mergeSort(int[] array, int begin, int end) {
         if (end == begin) {
-            //do nothing
-        } else if (end - begin == 1) {
-            if (array[begin] > array[end]) {
-                int temp = array[begin];
-                array[begin] = array[end];
-                array[end] = temp;
-            }
-        } else {
-            int mid = (begin + end) / 2;
-            mergeSort(array, begin, mid);
-            mergeSort(array, mid + 1, end);
-            merge(array, begin, mid, end);
+            return;
         }
+
+        int mid = (begin + end) / 2;
+        mergeSort(array, begin, mid);
+        mergeSort(array, mid + 1, end);
+        merge(array, begin, mid, end);
     }
 
     private static void merge(int[] a, int begin, int mid, int end) {
