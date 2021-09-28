@@ -2,7 +2,7 @@ package algorithm.sort;
 
 public class BubbleSort extends Sort {
     public static void main(String[] args) {
-        int[] inputArray = new int[50000];
+        int[] inputArray = new int[500];
         populate(inputArray);
         print("Given : ", inputArray);
 

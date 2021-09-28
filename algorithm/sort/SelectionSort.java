@@ -2,7 +2,7 @@ package algorithm.sort;
 
 public class SelectionSort extends Sort {
     public static void main(String[] args) {
-        int[] inputArray = new int[30];
+        int[] inputArray = new int[500];
         populate(inputArray);
         print("Given : ", inputArray);
 
