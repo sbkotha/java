@@ -2,7 +2,7 @@ package algorithm.dp;
 
 public class MaxContSubsetSum {
     public static void main(String[] args) {
-        int[] inputArray = {2, 1, -7, 4, -1, 0, 3, -5, -10, -2, 1, 2, -5, 6};
+        int[] inputArray = {2, 1, -7, 4, -1, 0, 3, 5, 10, -2, 1, 2, -5, 6};
         bruteForceSolution(inputArray);
         optimisedSolution(inputArray);
     }

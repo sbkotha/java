@@ -5,15 +5,12 @@ import java.util.PriorityQueue;
 public class MergeIntervals {
     public static void main(String[] args) {
         PriorityQueue<Interval> list = new PriorityQueue<>();
-        list.add(new Interval(1, 5));
-        list.add(new Interval(2, 3));
-        list.add(new Interval(6, 9));
-        list.add(new Interval(1, 15));
-        list.add(new Interval(3, 14));
-        list.add(new Interval(4, 20));
-        list.add(new Interval(3, 27));
-        list.add(new Interval(7, 28));
-        list.add(new Interval(0, 39));
+        list.add(new Interval(1, 4));
+        list.add(new Interval(2, 8));
+        list.add(new Interval(3, 10));
+        list.add(new Interval(11, 15));
+        list.add(new Interval(11, 14));
+        list.add(new Interval(12, 13));
 
         PriorityQueue<Interval> mergedList = mergeIntervals(list);
 
